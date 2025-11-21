@@ -1,0 +1,11 @@
+{
+    "prod": {
+        "app_function": "app.app",
+        "aws_region": "us-east-1",
+        "project_name": "catalogo-vehiculos-app",
+        "runtime": "python3.9",
+        "manage_roles": false,
+        "role_name": "voclabs-lambda-role",
+        "s3_bucket": "zappa-lambda-deployments-amir"
+    }
+}
