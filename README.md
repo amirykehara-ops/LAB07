@@ -20,6 +20,9 @@ Desarrollar dos aplicaciones Flask listas para despliegue en AWS Lambda:
 - Diseño moderno con lista de vehículos (marca, modelo, año, precio).
 - Datos simulados (no requiere base de datos externa).
 
+- Listo para despliegue con Zappa: Ambas aplicaciones (app1 y app2) están completamente configuradas y listas para desplegarse en AWS Lambda mediante Zappa. Incluyen los archivos zappa_settings.json con configuración adecuada para la región us-east-1, manejo de roles desactivado (manage_roles: false) y nombre de rol predefinido para entornos con permisos IAM limitados
+
+
 ---
 
 ## 📦 Requisitos
@@ -32,11 +35,8 @@ Desarrollar dos aplicaciones Flask listas para despliegue en AWS Lambda:
 cd app1
 $env:FLASK_APP = "app.py" flask run
 
-Listo para despliegue con Zappa: Ambas aplicaciones (app1 y app2) están completamente configuradas y listas para desplegarse en AWS Lambda mediante Zappa. Incluyen los archivos zappa_settings.json con configuración adecuada para la región us-east-1, manejo de roles desactivado (manage_roles: false) y nombre de rol predefinido para entornos con permisos IAM limitados
-
 # App 2
 cd app2
 $env:FLASK_APP = "app.py" flask run
-
 
 
